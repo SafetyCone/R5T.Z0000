@@ -31,6 +31,7 @@ namespace R5T.Z0000
         /// <summary>
         /// Strangely, in Visual Studio form-feed prints as the feminine (Venus) symbol.
         /// </summary>
+        public char ExclamationMark => '!';
         public char FormFeed => '';
         public char LessThan => '<';
         public char Minus => '-';
@@ -45,6 +46,7 @@ namespace R5T.Z0000
         public char Pipe => '|';
         public char Plus => '+';
         public char Pound => '#';
+        public char QuestionMark => '?';
         public char Slash => '/';
         public char Space => ' ';
         public char Tab => '\t';

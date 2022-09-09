@@ -58,5 +58,12 @@ namespace R5T.Z0000
 #pragma warning restore IDE1006 // Naming Styles
 
         public string NewLineForEnvironment => Environment.NewLine;
+
+        public string No_Lowercase => "no";
+        public string No_Camelcase => "No";
+        public string No => this.No_Camelcase;
+        public string Yes_Lowercase => "yes";
+        public string Yes_Camelcase => "Yes";
+        public string Yes => this.Yes_Camelcase;
     }
 }

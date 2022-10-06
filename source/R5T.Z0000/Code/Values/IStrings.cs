@@ -9,6 +9,7 @@ namespace R5T.Z0000
     public partial interface IStrings : IValuesMarker
     {
         public string Ampersand => "&";
+        public string Apostrophe => "'";
         public string Asterix => "*";
         public string At => "@";
         public string Backslash => @"\";
@@ -21,6 +22,7 @@ namespace R5T.Z0000
         public string Dash => "-";
         public string DoubleDot => "..";
         public string DoubleEquals => "==";
+        public string DoubleQuote => this.Quote;
         public string DoubleSlash => "//";
         public string DoubleSpaces => "  ";
         public string Ellipsis => "...";
@@ -43,6 +45,10 @@ namespace R5T.Z0000
         public string Pipe => "|";
         public string PipeSpace => "| ";
         public string QuestionMark => "?";
+        /// <inheritdoc cref="ICharacters.Quote"/>
+        public string Quote => "\"";
+        public string Semicolon => ";";
+        public string SingleQuote => this.Apostrophe;
         public string Space => " ";
         public const string Space_Const = " ";
         public string Slash => "/";
@@ -61,9 +67,28 @@ namespace R5T.Z0000
 
         public string No_Lowercase => "no";
         public string No_Camelcase => "No";
+        /// <summary>
+        /// Chooses <see cref="No_Camelcase"/> as the default.
+        /// </summary>
         public string No => this.No_Camelcase;
         public string Yes_Lowercase => "yes";
         public string Yes_Camelcase => "Yes";
+        /// <summary>
+        /// Chooses <see cref="Yes_Camelcase"/> as the default.
+        /// </summary>
         public string Yes => this.Yes_Camelcase;
+
+        public string True_Lowercase => "true";
+        public string True_Camelcase => "True";
+        /// <summary>
+        /// Chooses <see cref="True_Camelcase"/> as the default.
+        /// </summary>
+        public string True => this.True_Camelcase;
+        public string False_Lowercase => "false";
+        public string False_Camelcase => "False";
+        /// <summary>
+        /// Chooses <see cref="False_Camelcase"/> as the default.
+        /// </summary>
+        public string False => this.False_Camelcase;
     }
 }

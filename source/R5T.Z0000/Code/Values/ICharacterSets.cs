@@ -9,7 +9,7 @@ namespace R5T.Z0000
 	[ValuesMarker]
 	public partial interface ICharacterSets : IValuesMarker
 	{
-		private static readonly Lazy<char[]> zSentenceEndings = new(
+		private static readonly Lazy<char[]> zSentenceEndings = new Lazy<char[]>(
 			new[]
 			{
 				Instances.Characters.ExclamationMark,
@@ -18,7 +18,7 @@ namespace R5T.Z0000
 			});
 		public char[] SentenceEndings => ICharacterSets.zSentenceEndings.Value;
 
-		private static readonly Lazy<char[]> zSentenceEndings_AndSpace = new(
+		private static readonly Lazy<char[]> zSentenceEndings_AndSpace = new Lazy<char[]>(
 			ICharacterSets.zSentenceEndings.Value
 				.Append(Instances.Characters.Space)
 				.ToArray());

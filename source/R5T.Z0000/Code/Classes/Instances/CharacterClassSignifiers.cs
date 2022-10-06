@@ -7,7 +7,7 @@ namespace R5T.Z0000
     {
         #region Infrastructure
 
-        public static CharacterClassSignifiers Instance { get; } = new();
+        public static ICharacterClassSignifiers Instance { get; } = new CharacterClassSignifiers();
 
         private CharacterClassSignifiers()
         {

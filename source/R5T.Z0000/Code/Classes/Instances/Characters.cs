@@ -7,7 +7,7 @@ namespace R5T.Z0000
     {
         #region Infrastructure
 
-        public static Characters Instance { get; } = new();
+        public static ICharacters Instance { get; } = new Characters();
 
         private Characters()
         {

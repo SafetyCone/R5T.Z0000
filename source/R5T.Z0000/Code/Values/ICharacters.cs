@@ -13,6 +13,7 @@ namespace R5T.Z0000
     public interface ICharacters : IValuesMarker
     {
         public char Ampersand => '&';
+        public char Apostrophe => '\'';
         public char Asterix => '*';
         /// <summary>
         /// Also known as "alphasands".
@@ -27,6 +28,7 @@ namespace R5T.Z0000
         public char CloseParenthesis => ')';
         public char Colon => ':';
         public char Comma => ',';
+        public char DoubleQuote => this.Quote;
         public char Equals => '=';
         /// <summary>
         /// Strangely, in Visual Studio form-feed prints as the feminine (Venus) symbol.
@@ -47,6 +49,12 @@ namespace R5T.Z0000
         public char Plus => '+';
         public char Pound => '#';
         public char QuestionMark => '?';
+        /// <summary>
+        /// The '"' (quote, double-quote, or quotation mark) character.
+        /// </summary>
+        public char Quote => '"';
+        public char Semicolon => ';';
+        public char SingleQuote => this.Apostrophe;
         public char Slash => '/';
         public char Space => ' ';
         public char Tab => '\t';

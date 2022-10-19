@@ -32,6 +32,8 @@ namespace R5T.Z0000
         public string Hash => "#";
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
         public string Null => null;
+        public string Null_StandardRepresentation => "null";
+        public string Null_TextRepresentation => "<null>";
         public string NewLine => this.NewLine_Windows;
         public string NewLine_Windows => "\r\n";
         public string NewLine_NonWindows => "\n";
@@ -66,29 +68,33 @@ namespace R5T.Z0000
         public string NewLineForEnvironment => Environment.NewLine;
 
         public string No_Lowercase => "no";
-        public string No_Camelcase => "No";
+        public string No_PascalCase => "No";
+        public string No_UpperCase => "NO";
         /// <summary>
-        /// Chooses <see cref="No_Camelcase"/> as the default.
+        /// Chooses <see cref="No_PascalCase"/> as the default.
         /// </summary>
-        public string No => this.No_Camelcase;
+        public string No => this.No_PascalCase;
         public string Yes_Lowercase => "yes";
-        public string Yes_Camelcase => "Yes";
+        public string Yes_PascalCase => "Yes";
+        public string Yes_UpperCase => "YES";
         /// <summary>
-        /// Chooses <see cref="Yes_Camelcase"/> as the default.
+        /// Chooses <see cref="Yes_PascalCase"/> as the default.
         /// </summary>
-        public string Yes => this.Yes_Camelcase;
+        public string Yes => this.Yes_PascalCase;
 
         public string True_Lowercase => "true";
-        public string True_Camelcase => "True";
+        public string True_PascalCase => "True";
+        public string True_Uppercase => "TRUE";
         /// <summary>
-        /// Chooses <see cref="True_Camelcase"/> as the default.
+        /// Chooses <see cref="True_PascalCase"/> as the default.
         /// </summary>
-        public string True => this.True_Camelcase;
+        public string True => this.True_PascalCase;
         public string False_Lowercase => "false";
-        public string False_Camelcase => "False";
+        public string False_PascalCase => "False";
+        public string False_UpperCase => "FALSE";
         /// <summary>
-        /// Chooses <see cref="False_Camelcase"/> as the default.
+        /// Chooses <see cref="False_PascalCase"/> as the default.
         /// </summary>
-        public string False => this.False_Camelcase;
+        public string False => this.False_PascalCase;
     }
 }

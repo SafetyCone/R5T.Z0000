@@ -44,6 +44,7 @@ namespace R5T.Z0000
         public char NextLine => '\x85';
         public char OpenBrace => '[';
         public char OpenParenthesis => '(';
+        public char Percent => '%';
         public char Period => '.';
         public char Pipe => '|';
         public char Plus => '+';

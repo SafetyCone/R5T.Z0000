@@ -32,6 +32,7 @@ namespace R5T.Z0000
         public string Hash => "#";
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
         public string Null => null;
+        public const string Null_Constant = null;
         public string Null_StandardRepresentation => "null";
         public string Null_TextRepresentation => "<null>";
         public string NewLine => this.NewLine_Windows;
@@ -53,7 +54,10 @@ namespace R5T.Z0000
         public string SingleQuote => this.Apostrophe;
         public string Space => " ";
         public const string Space_Const = " ";
-        public string Slash => "/";
+        /// <inheritdoc cref="ICharacters.Slash"/>
+        public string Slash => IStrings.Slash_Constant;
+        /// <inheritdoc cref="ICharacters.Slash"/>
+        public const string Slash_Constant = "/";
         public string Tab => "\t";
         public string Underscore => "_";
 

@@ -1,4 +1,6 @@
-R5T.Z0000 - Common values of .NET C# built-in types, like characters, strings, integers, etc.
+#R5T.Z0000
+Common values of .NET C# built-in types, like characters, strings, integers, etc.
+
 Note: not for System namespace types and related types, like predicate, regular expression patter, index, etc. Those belong in R5T.Z0001.
 
 * Without all System namespace types

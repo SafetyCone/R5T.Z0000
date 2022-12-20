@@ -31,7 +31,7 @@ namespace R5T.Z0000
         public string GreaterThan => ">";
         public string Hash => "#";
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
-        public string Null => null;
+        public string Null => IStrings.Null_Constant;
         public const string Null_Constant = null;
         public string Null_StandardRepresentation => "null";
         public string Null_TextRepresentation => "<null>";
@@ -61,11 +61,12 @@ namespace R5T.Z0000
         public string Tab => "\t";
         public string Underscore => "_";
 
-        public string I_UpperCase => "I";
+        public string A_Uppercase => "A";
+        public string I_Uppercase => "I";
 
 #pragma warning disable IDE1006 // Naming Styles
 
-        public string s_LowerCase => "s";
+        public string s_Lowercase => "s";
 
 #pragma warning restore IDE1006 // Naming Styles
 

@@ -24,6 +24,7 @@ namespace R5T.Z0000
         /// Also known as the circumflex, or up-caret.
         /// </summary>
         public char Caret => '^';
+        public char CloseAngleBracket => this.GreaterThan;
         public char CloseBrace => ']';
         public char CloseParenthesis => ')';
         public char Colon => ':';
@@ -37,6 +38,7 @@ namespace R5T.Z0000
         /// </summary>
         public char ExclamationMark => '!';
         public char FormFeed => '';
+        public char GreaterThan => '>';
         public char Hyphen => this.Minus;
         public char LessThan => '<';
         public char Minus => '-';
@@ -45,6 +47,7 @@ namespace R5T.Z0000
         /// Sometimes the next-line character is represented as ellipsis (...).
         /// </summary>
         public char NextLine => '\x85';
+        public char OpenAngleBracket => this.LessThan;
         public char OpenBrace => '[';
         public char OpenParenthesis => '(';
         public char Percent => '%';

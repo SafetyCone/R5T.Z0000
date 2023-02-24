@@ -68,6 +68,9 @@ namespace R5T.Z0000
         public char Slash => '/';
         public char Space => ' ';
         public char Tab => '\t';
+        /// <summary>
+        /// The ` (tick) character.
+        /// </summary>
         public char Tick => '`';
         public char Underscore => '_';
         /// <summary>

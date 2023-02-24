@@ -70,7 +70,7 @@ namespace R5T.Z0000
 
 #pragma warning restore IDE1006 // Naming Styles
 
-        public string NewLineForEnvironment => Environment.NewLine;
+        public string NewLine_ForEnvironment => Environment.NewLine;
 
         public string No_Lowercase => "no";
         public string No_PascalCase => "No";

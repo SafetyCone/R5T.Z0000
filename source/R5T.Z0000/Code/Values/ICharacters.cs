@@ -24,10 +24,29 @@ namespace R5T.Z0000
         /// Also known as the circumflex, or up-caret.
         /// </summary>
         public char Caret => '^';
-        public char CloseAngleBracket => this.GreaterThan;
+        /// <summary>
+        /// The close angle-bracket ('&gt;').
+        /// </summary>
+        public char CloseAngleBracket => '>';
+        /// <summary>
+        /// ']'
+        /// </summary>
         public char CloseBrace => ']';
+        /// <summary>
+        /// '}'
+        /// </summary>
+        public char CloseBracket => '}';
+        /// <summary>
+        /// The close parenthesis (')').
+        /// </summary>
+        /// <value>
+        /// )
+        /// </value>
         public char CloseParenthesis => ')';
         public char Colon => ':';
+        /// <summary>
+        /// The comma (',').
+        /// </summary>
         public char Comma => ',';
         public char Dash => this.Minus;
         public char DoubleQuote => this.Quote;
@@ -38,8 +57,10 @@ namespace R5T.Z0000
         /// </summary>
         public char ExclamationMark => '!';
         public char FormFeed => '';
-        public char GreaterThan => '>';
+        /// <inheritdoc cref="CloseAngleBracket"/>
+        public char GreaterThan => this.CloseAngleBracket;
         public char Hyphen => this.Minus;
+        /// <inheritdoc cref="OpenAngleBracket"/>
         public char LessThan => '<';
         public char Minus => '-';
         public char NewLine => '\n';
@@ -47,10 +68,29 @@ namespace R5T.Z0000
         /// Sometimes the next-line character is represented as ellipsis (...).
         /// </summary>
         public char NextLine => '\x85';
+        /// <summary>
+        /// The open angle-bracket ('&lt;').
+        /// </summary>
         public char OpenAngleBracket => this.LessThan;
+        /// <summary>
+        /// '['
+        /// </summary>
         public char OpenBrace => '[';
+        /// <summary>
+        /// '{'
+        /// </summary>
+        public char OpenBracket => '{';
+        /// <summary>
+        /// The open parenthesis ('(').
+        /// </summary>
+        /// <value>
+        /// (
+        /// </value>
         public char OpenParenthesis => '(';
         public char Percent => '%';
+        /// <summary>
+        /// The period ('.').
+        /// </summary>
         public char Period => '.';
         public char Pipe => '|';
         public char Plus => '+';
@@ -66,6 +106,15 @@ namespace R5T.Z0000
         /// '/' (slash)
         /// </summary>
         public char Slash => '/';
+        /// <summary>
+        /// The space (' ').
+        /// </summary>
+        /// <name>
+        /// Space
+        /// </name>
+        /// <value>
+        /// (space)
+        /// </value>
         public char Space => ' ';
         public char Tab => '\t';
         /// <summary>

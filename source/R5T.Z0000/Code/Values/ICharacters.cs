@@ -37,17 +37,28 @@ namespace R5T.Z0000
         /// </summary>
         public char CloseBracket => '}';
         /// <summary>
-        /// The close parenthesis (')').
+        /// The character ')'.
         /// </summary>
         /// <value>
         /// )
         /// </value>
         public char CloseParenthesis => ')';
-        public char Colon => ':';
         /// <summary>
-        /// The comma (',').
+        /// The character ':'.
+        /// </summary>
+        public const char Colon_Constant = ':';
+        /// <inheritdoc cref="Colon_Constant"/>
+        public char Colon => ICharacters.Colon_Constant;
+        /// <summary>
+        /// The character ','.
         /// </summary>
         public char Comma => ',';
+        /// <summary>
+        /// '©' - The copyright character.
+        /// </summary>
+        public const char Copyright_Constant = '©';
+        /// <inheritdoc cref="Copyright_Constant"/>
+        public char Copyright => ICharacters.Copyright_Constant;
         public char Dash => this.Minus;
         public char DoubleQuote => this.Quote;
         public char Dot => this.Period;
@@ -55,13 +66,15 @@ namespace R5T.Z0000
         /// <summary>
         /// Strangely, in Visual Studio form-feed prints as the feminine (Venus) symbol.
         /// </summary>
-        public char ExclamationMark => '!';
+        public const char ExclamationMark_Constant = '!';
+        /// <inheritdoc cref="ExclamationMark_Constant"/>
+        public char ExclamationMark => ICharacters.ExclamationMark_Constant;
         public char FormFeed => '';
         /// <inheritdoc cref="CloseAngleBracket"/>
         public char GreaterThan => this.CloseAngleBracket;
         public char Hyphen => this.Minus;
         /// <inheritdoc cref="OpenAngleBracket"/>
-        public char LessThan => '<';
+        public char LessThan => this.OpenAngleBracket;
         public char Minus => '-';
         public char NewLine => '\n';
         /// <summary>
@@ -71,7 +84,9 @@ namespace R5T.Z0000
         /// <summary>
         /// The open angle-bracket ('&lt;').
         /// </summary>
-        public char OpenAngleBracket => this.LessThan;
+        public const char OpenAngleBracket_Constant = '<';
+        /// <inheritdoc cref="OpenAngleBracket_Constant"/>
+        public char OpenAngleBracket => ICharacters.OpenAngleBracket_Constant;
         /// <summary>
         /// '['
         /// </summary>
@@ -81,7 +96,7 @@ namespace R5T.Z0000
         /// </summary>
         public char OpenBracket => '{';
         /// <summary>
-        /// The open parenthesis ('(').
+        /// The character '('.
         /// </summary>
         /// <value>
         /// (
@@ -89,7 +104,7 @@ namespace R5T.Z0000
         public char OpenParenthesis => '(';
         public char Percent => '%';
         /// <summary>
-        /// The period ('.').
+        /// The character '.'.
         /// </summary>
         public char Period => '.';
         public char Pipe => '|';
@@ -100,7 +115,12 @@ namespace R5T.Z0000
         /// The '"' (quote, double-quote, or quotation mark) character.
         /// </summary>
         public char Quote => '"';
-        public char Semicolon => ';';
+        /// <summary>
+        /// The character ';'.
+        /// </summary>
+        public const char Semicolon_Constant = ';';
+        /// <inheritdoc cref="Semicolon_Constant"/>
+        public char Semicolon => ICharacters.Semicolon_Constant;
         public char SingleQuote => this.Apostrophe;
         /// <summary>
         /// '/' (slash)
@@ -140,22 +160,28 @@ namespace R5T.Z0000
         public char B_Uppercase => 'B';
         public char C_Uppercase => 'C';
         public char D_Uppercase => 'D';
-        public char E_Uppercase => 'E';
-        public char F_Uppercase => 'F';
+        public const char E_Uppercase_Constant = 'E';
+        public char E_Uppercase => ICharacters.E_Uppercase_Constant;
+        public const char F_Uppercase_Constant = 'F';
+        public char F_Uppercase => ICharacters.F_Uppercase_Constant;
         public char G_Uppercase => 'G';
         public char H_Uppercase => 'H';
         public char I_Uppercase => 'I';
         public char J_Uppercase => 'J';
         public char K_Uppercase => 'K';
         public char L_Uppercase => 'L';
-        public char M_Uppercase => 'M';
-        public char N_Uppercase => 'N';
+        public const char M_Uppercase_Constant = 'M';
+        public char M_Uppercase => ICharacters.M_Uppercase_Constant;
+        public const char N_Uppercase_Constant = 'N';
+        public char N_Uppercase => ICharacters.N_Uppercase_Constant;
         public char O_Uppercase => 'O';
-        public char P_Uppercase => 'P';
+        public const char P_Uppercase_Constant = 'P';
+        public char P_Uppercase => ICharacters.P_Uppercase_Constant;
         public char Q_Uppercase => 'Q';
         public char R_Uppercase => 'R';
         public char S_Uppercase => 'S';
-        public char T_Uppercase => 'T';
+        public const char T_Uppercase_Constant = 'T';
+        public char T_Uppercase => ICharacters.T_Uppercase_Constant;
         public char Thorn_Uppercase => 'Þ';
         public char U_Uppercase => 'U';
         public char V_Uppercase => 'V';

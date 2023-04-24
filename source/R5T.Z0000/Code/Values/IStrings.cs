@@ -23,6 +23,10 @@ namespace R5T.Z0000
         /// <inheritdoc cref="ICharacters.Comma"/>
         public string Comma => ",";
         public string CommaSeparatedListSpacedSeparator => ", ";
+        /// <inheritdoc cref="ICharacters.Copyright_Constant"/>
+        public const string Copyright_Constant = "©";
+        /// <inheritdoc cref="IStrings.Copyright_Constant"/>
+        public string Copyright => IStrings.Copyright_Constant;
         public string Dash => "-";
         public string DoubleDot => "..";
         public string DoubleEquals => "==";
@@ -30,17 +34,44 @@ namespace R5T.Z0000
         public string DoubleSlash => "//";
         public string DoubleSpaces => "  ";
         public string Ellipsis => "...";
-        public string Empty => "";
-        public const string Empty_Const = ""; // Constant, as opposed to String.Empty, which is readonly. Only constants can be used as default parameter values.
+        /// <summary>
+        /// <description>The empty string ("").</description>
+        /// Constant, as opposed to <see cref="String.Empty"/>, which is readonly. Only constants can be used as default parameter values.
+        /// </summary>
+        public const string Empty_Constant = "";
+        /// <summary>
+        /// <inheritdoc cref="Empty_Constant" path="/summary/description"/>
+        /// </summary>
+        public string Empty => IStrings.Empty_Constant;
+        /// <summary>
+        /// "&lt;empty&gt;"
+        /// </summary>
+        public string Empty_TextRepresentation => "<empty>";
         public string GreaterThan => ">";
         public string Hash => "#";
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
-        public string Null => IStrings.Null_Constant;
+        /// <summary>
+        /// The actual value, null.
+        /// </summary>
         public const string Null_Constant = null;
+        /// <inheritdoc cref="Null_Constant"/>
+        public string Null => IStrings.Null_Constant;
+        /// <summary>
+        /// "null"
+        /// </summary>
         public string Null_StandardRepresentation => "null";
+        /// <summary>
+        /// "&lt;null&gt;"
+        /// </summary>
         public string Null_TextRepresentation => "<null>";
         public string NewLine => this.NewLine_Windows;
+        /// <summary>
+        /// "\r\n"
+        /// </summary>
         public string NewLine_Windows => "\r\n";
+        /// <summary>
+        /// "\n"
+        /// </summary>
         public string NewLine_NonWindows => "\n";
         /// <inheritdoc cref="ICharacters.OpenAngleBracket"/>
         public string OpenAngleBracket => "<";
@@ -79,6 +110,7 @@ namespace R5T.Z0000
 
 #pragma warning restore IDE1006 // Naming Styles
 
+        /// <inheritdoc cref="Environment.NewLine"/>
         public string NewLine_ForEnvironment => Environment.NewLine;
 
         public string No_Lowercase => "no";
@@ -88,6 +120,10 @@ namespace R5T.Z0000
         /// Chooses <see cref="No_PascalCase"/> as the default.
         /// </summary>
         public string No => this.No_PascalCase;
+        /// <summary>
+        /// "&lt;empty&gt;"
+        /// </summary>
+        public string None_TextRepresentation => "<none>";
         public string Yes_Lowercase => "yes";
         public string Yes_PascalCase => "Yes";
         public string Yes_UpperCase => "YES";

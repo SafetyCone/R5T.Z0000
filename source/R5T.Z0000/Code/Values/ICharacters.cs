@@ -25,6 +25,11 @@ namespace R5T.Z0000
         /// </summary>
         public char Caret => '^';
         /// <summary>
+        /// '\r' - The carriage return.
+        /// </summary>
+        public const char CarriageReturn_Constant = '\r';
+        public char CarriageReturn => ICharacters.CarriageReturn_Constant;
+        /// <summary>
         /// The close angle-bracket ('&gt;').
         /// </summary>
         public char CloseAngleBracket => '>';

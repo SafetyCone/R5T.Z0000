@@ -16,6 +16,9 @@ namespace R5T.Z0000
         /// <inheritdoc cref="ICharacters.CloseAngleBracket"/>
         public string CloseAngleBracket => ">";
         public string CloseBrace => "}";
+        /// <summary>
+        /// "]"
+        /// </summary>
         public string CloseBracket => "]";
         /// <inheritdoc cref="ICharacters.CloseParenthesis"/>
         public string CloseParenthesis => ")";
@@ -49,6 +52,12 @@ namespace R5T.Z0000
         public string Empty_TextRepresentation => "<empty>";
         public string GreaterThan => ">";
         public string Hash => "#";
+        /// <summary>
+        /// "·" - the interpunct.
+        /// </summary>
+        public const string Interpunct_Const = "·";
+        /// <inheritdoc cref="Interpunct_Const"/>
+        public string Interpunct => IStrings.Interpunct_Const;
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
         /// <summary>
         /// The actual value, null.
@@ -64,18 +73,29 @@ namespace R5T.Z0000
         /// "&lt;null&gt;"
         /// </summary>
         public string Null_TextRepresentation => "<null>";
+        /// <summary>
+        /// Chooses <see cref="NewLine_Windows"/> as the default.
+        /// </summary>
         public string NewLine => this.NewLine_Windows;
         /// <summary>
         /// "\r\n"
         /// </summary>
-        public string NewLine_Windows => "\r\n";
+        public const string NewLine_Windows_Constant = "\r\n";
+        /// <inheritdoc cref="NewLine_Windows_Constant"/>
+        public string NewLine_Windows => IStrings.NewLine_Windows_Constant;
         /// <summary>
         /// "\n"
         /// </summary>
-        public string NewLine_NonWindows => "\n";
+        public const string NewLine_NonWindows_Constant = "\n";
+        /// <inheritdoc cref="NewLine_NonWindows_Constant"/>
+        public string NewLine_NonWindows => IStrings.NewLine_NonWindows_Constant;
+        public string NewLine_TextRepresentation => "<newline>";
         /// <inheritdoc cref="ICharacters.OpenAngleBracket"/>
         public string OpenAngleBracket => "<";
         public string OpenBrace => "{";
+        /// <summary>
+        /// "["
+        /// </summary>
         public string OpenBracket => "[";
         /// <inheritdoc cref="ICharacters.OpenParenthesis"/>
         public string OpenParenthesis => "(";
@@ -98,7 +118,16 @@ namespace R5T.Z0000
         public string Slash => IStrings.Slash_Constant;
         /// <inheritdoc cref="ICharacters.Slash"/>
         public const string Slash_Constant = "/";
-        public string Tab => "\t";
+        /// <summary>
+        /// "\t"
+        /// </summary>
+        public const string Tab_Constant = "\t";
+        /// <inheritdoc cref="Tab_Constant"/>
+        public string Tab => IStrings.Tab_Constant;
+        /// <summary>
+        /// "&lt;tab&gt;"
+        /// </summary>
+        public string Tab_TextRepresentation => "<tab>";
         public string Underscore => "_";
 
         public string A_Uppercase => "A";
@@ -110,7 +139,9 @@ namespace R5T.Z0000
 
 #pragma warning restore IDE1006 // Naming Styles
 
-        /// <inheritdoc cref="Environment.NewLine"/>
+        /// <summary>
+        /// <inheritdoc cref="Environment.NewLine" path="/returns"/>
+        /// </summary>
         public string NewLine_ForEnvironment => Environment.NewLine;
 
         public string No_Lowercase => "no";

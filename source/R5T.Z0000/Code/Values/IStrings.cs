@@ -25,11 +25,21 @@ namespace R5T.Z0000
         public string Colon => ":";
         /// <inheritdoc cref="ICharacters.Comma"/>
         public string Comma => ",";
-        public string CommaSeparatedListSpacedSeparator => ", ";
+
+        /// <summary>
+        /// ", " - Comma and then a space.
+        /// </summary>
+        public const string CommaSeparatedListSpacedSeparator_Constant = ", ";
+
+        /// <inheritdoc cref="CommaSeparatedListSpacedSeparator_Constant"/>
+        public string CommaSeparatedListSpacedSeparator => IStrings.CommaSeparatedListSpacedSeparator_Constant;
+
         /// <inheritdoc cref="ICharacters.Copyright_Constant"/>
         public const string Copyright_Constant = "©";
+
         /// <inheritdoc cref="IStrings.Copyright_Constant"/>
         public string Copyright => IStrings.Copyright_Constant;
+
         public string Dash => "-";
         public string DoubleDot => "..";
         public string DoubleEquals => "==";

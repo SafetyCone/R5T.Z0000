@@ -155,7 +155,8 @@ namespace R5T.Z0000
 #pragma warning disable IDE1006 // Naming Styles
 
         /// <summary>
-        /// A latin ligature of 'A' and 'E', or the Old English ash, which is the sound in "hat" or "pattern" (as opposed to the sound in "father" or "car").
+        /// <para>"Æ"</para>
+        /// <description>A latin ligature of 'A' and 'E', or the Old English ash, which is the sound in "hat" or "pattern" (as opposed to the sound in "father" or "car").</description>
         /// </summary>
         public char Ash_Uppercase => 'Æ';
         /// <summary>
@@ -187,6 +188,9 @@ namespace R5T.Z0000
         public char S_Uppercase => 'S';
         public const char T_Uppercase_Constant = 'T';
         public char T_Uppercase => ICharacters.T_Uppercase_Constant;
+        /// <summary>
+        /// <para>"Þ"</para>
+        /// </summary>
         public char Thorn_Uppercase => 'Þ';
         public char U_Uppercase => 'U';
         public char V_Uppercase => 'V';
@@ -198,7 +202,10 @@ namespace R5T.Z0000
         public char Z_Uppercase => 'Z';
 
 
-        /// <inheritdoc cref="Ash_Uppercase"/>
+        /// <summary>
+        /// <para>"æ"</para>
+        /// <inheritdoc cref="Ash_Uppercase" path="/summary/description"/>
+        /// </summary>
         public char Ash_Lowercase => 'æ';
         public char a_Lowercase => 'a';
         public char b_Lowercase => 'b';
@@ -220,7 +227,9 @@ namespace R5T.Z0000
         public char r_Lowercase => 'r';
         public char s_Lowercase => 's';
         public char t_Lowercase => 't';
-        /// <inheritdoc cref="Thorn_Uppercase"/>
+        /// <summary>
+        /// <para>"þ"</para>
+        /// </summary>
         public char Thorn_Lowercase => 'þ';
         public char u_Lowercase => 'u';
         public char v_Lowercase => 'v';

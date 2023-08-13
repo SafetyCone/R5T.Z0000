@@ -15,32 +15,54 @@ namespace R5T.Z0000
         public char Ampersand => '&';
         public char Apostrophe => '\'';
         public char Asterix => '*';
+
         /// <summary>
         /// Also known as "alphasands".
         /// </summary>
         public char At => '@';
+
         public char Backslash => '\\';
+
         /// <summary>
         /// Also known as the circumflex, or up-caret.
         /// </summary>
         public char Caret => '^';
+
         /// <summary>
         /// '\r' - The carriage return.
         /// </summary>
         public const char CarriageReturn_Constant = '\r';
+
+        /// <inheritdoc cref="CarriageReturn_Constant"/>
         public char CarriageReturn => ICharacters.CarriageReturn_Constant;
+
         /// <summary>
         /// The close angle-bracket ('&gt;').
         /// </summary>
         public char CloseAngleBracket => '>';
+
         /// <summary>
         /// ']'
         /// </summary>
+        [Obsolete("INCORRECT! Use Close*BRACKET*_Correct")]
         public char CloseBrace => ']';
+
+        /// <summary>
+        /// '}' (close-brace)
+        /// </summary>
+        public char CloseBrace_Correct => '}';
+
         /// <summary>
         /// '}'
         /// </summary>
+        [Obsolete("INCORRECT! Use Close*BRACE*_Correct")]
         public char CloseBracket => '}';
+
+        /// <summary>
+        /// ']' (close-bracket)
+        /// </summary>
+        public char CloseBracket_Correct => ']';
+
         /// <summary>
         /// The character ')'.
         /// </summary>
@@ -48,12 +70,15 @@ namespace R5T.Z0000
         /// )
         /// </value>
         public char CloseParenthesis => ')';
+
         /// <summary>
-        /// The character ':'.
+        /// ':' (colon)
         /// </summary>
         public const char Colon_Constant = ':';
+
         /// <inheritdoc cref="Colon_Constant"/>
         public char Colon => ICharacters.Colon_Constant;
+
         /// <summary>
         /// The character ','.
         /// </summary>
@@ -86,20 +111,37 @@ namespace R5T.Z0000
         /// Sometimes the next-line character is represented as ellipsis (...).
         /// </summary>
         public char NextLine => '\x85';
+
         /// <summary>
         /// The open angle-bracket ('&lt;').
         /// </summary>
         public const char OpenAngleBracket_Constant = '<';
+
         /// <inheritdoc cref="OpenAngleBracket_Constant"/>
         public char OpenAngleBracket => ICharacters.OpenAngleBracket_Constant;
+
         /// <summary>
         /// '['
         /// </summary>
+        [Obsolete("INCORRECT! Use Open*BRACKET*_Correct")]
         public char OpenBrace => '[';
+
+        /// <summary>
+        /// '{' (open-brace)
+        /// </summary>
+        public char OpenBrace_Correct => '{';
+
         /// <summary>
         /// '{'
         /// </summary>
+        [Obsolete("INCORRECT! Use Open*BRACE*_Correct")]
         public char OpenBracket => '{';
+
+        /// <summary>
+        /// '[' (open-bracket)
+        /// </summary>
+        public char OpenBracket_Correct => '[';
+
         /// <summary>
         /// The character '('.
         /// </summary>
@@ -232,10 +274,25 @@ namespace R5T.Z0000
         /// </summary>
         public char Thorn_Lowercase => 'þ';
         public char u_Lowercase => 'u';
-        public char v_Lowercase => 'v';
+        
+        /// <summary>
+        /// 'v' (lowercase v)
+        /// </summary>
+        public const char v_Lowercase_Constant = 'v';
+
+        /// <inheritdoc cref="v_Lowercase_Constant"/>
+        public char v_Lowercase => v_Lowercase_Constant;
+
         public char w_Lowercase => 'w';
         public char x_Lowercase => 'x';
         public char y_Lowercase => 'y';
+
+        /// <summary>
+        /// 'z' (lower-case z)
+        /// </summary>
+        public const char z_Lowercase_Constant = 'z';
+
+        /// <inheritdoc cref="z_Lowercase_Constant"/>
         public char z_Lowercase => 'z';
 
 #pragma warning restore IDE1006 // Naming Styles

@@ -21,6 +21,9 @@ namespace R5T.Z0000
         /// </summary>
         public char At => '@';
 
+        /// <summary>
+        /// <para><name>'\' (back-slash)</name></para>
+        /// </summary>
         public char Backslash => '\\';
 
         /// <summary>
@@ -138,7 +141,8 @@ namespace R5T.Z0000
         public char OpenBracket => '{';
 
         /// <summary>
-        /// '[' (open-bracket)
+        /// <para>'[' (open-bracket)</para>
+        /// The open-bracket character '['.
         /// </summary>
         public char OpenBracket_Correct => '[';
 
@@ -151,7 +155,8 @@ namespace R5T.Z0000
         public char OpenParenthesis => '(';
         public char Percent => '%';
         /// <summary>
-        /// The character '.'.
+        /// <para><name>'.' (period)</name></para>
+        /// The period character '.'.
         /// </summary>
         public char Period => '.';
         public char Pipe => '|';
@@ -169,10 +174,12 @@ namespace R5T.Z0000
         /// <inheritdoc cref="Semicolon_Constant"/>
         public char Semicolon => ICharacters.Semicolon_Constant;
         public char SingleQuote => this.Apostrophe;
+
         /// <summary>
-        /// '/' (slash)
+        /// <para><name>'/' (slash)</name></para>
         /// </summary>
         public char Slash => '/';
+
         /// <summary>
         /// The space (' ').
         /// </summary>
@@ -274,7 +281,7 @@ namespace R5T.Z0000
         /// </summary>
         public char Thorn_Lowercase => 'þ';
         public char u_Lowercase => 'u';
-        
+
         /// <summary>
         /// 'v' (lowercase v)
         /// </summary>

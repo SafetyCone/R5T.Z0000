@@ -17,6 +17,7 @@ namespace R5T.Z0000
         public char Asterix => '*';
 
         /// <summary>
+        /// <para><name>'@' (alphasands)</name></para>
         /// Also known as "alphasands".
         /// </summary>
         public char At => '@';

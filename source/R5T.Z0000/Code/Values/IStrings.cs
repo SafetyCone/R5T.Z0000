@@ -48,7 +48,7 @@ namespace R5T.Z0000
         public string DoubleSpaces => "  ";
         public string Ellipsis => "...";
         /// <summary>
-        /// <description>The empty string ("").</description>
+        /// <description>"", the empty string</description>
         /// Constant, as opposed to <see cref="String.Empty"/>, which is readonly. Only constants can be used as default parameter values.
         /// </summary>
         public const string Empty_Constant = "";

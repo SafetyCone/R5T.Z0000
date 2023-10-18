@@ -93,6 +93,7 @@ namespace R5T.Z0000
         public const char Copyright_Constant = '©';
         /// <inheritdoc cref="Copyright_Constant"/>
         public char Copyright => ICharacters.Copyright_Constant;
+        /// <inheritdoc cref="Minus"/>
         public char Dash => this.Minus;
         public char DoubleQuote => this.Quote;
         public char Dot => this.Period;
@@ -109,6 +110,9 @@ namespace R5T.Z0000
         public char Hyphen => this.Minus;
         /// <inheritdoc cref="OpenAngleBracket"/>
         public char LessThan => this.OpenAngleBracket;
+        /// <summary>
+        /// '-'
+        /// </summary>
         public char Minus => '-';
         public char NewLine => '\n';
         /// <summary>

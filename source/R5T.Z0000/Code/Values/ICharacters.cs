@@ -2,6 +2,8 @@
 
 using R5T.T0131;
 
+using CharactersDocumentation = R5T.Y0006.Documentation.ForCharacters;
+
 
 namespace R5T.Z0000
 {
@@ -22,9 +24,7 @@ namespace R5T.Z0000
         /// </summary>
         public char At => '@';
 
-        /// <summary>
-        /// <para><name>'\' (back-slash)</name></para>
-        /// </summary>
+        /// <inheritdoc cref="CharactersDocumentation.ForBackslash"/>
         public char Backslash => '\\';
 
         /// <summary>
@@ -87,12 +87,13 @@ namespace R5T.Z0000
         /// The character ','.
         /// </summary>
         public char Comma => ',';
-        /// <summary>
-        /// '©' - The copyright character.
-        /// </summary>
+
+        /// <inheritdoc cref="CharactersDocumentation.ForCopyright"/>
         public const char Copyright_Constant = '©';
+
         /// <inheritdoc cref="Copyright_Constant"/>
         public char Copyright => ICharacters.Copyright_Constant;
+
         /// <inheritdoc cref="Minus"/>
         public char Dash => this.Minus;
         public char DoubleQuote => this.Quote;
@@ -172,17 +173,16 @@ namespace R5T.Z0000
         /// The '"' (quote, double-quote, or quotation mark) character.
         /// </summary>
         public char Quote => '"';
-        /// <summary>
-        /// The character ';'.
-        /// </summary>
+
+        /// <inheritdoc cref="CharactersDocumentation.ForSemicolon"/>
         public const char Semicolon_Constant = ';';
+
         /// <inheritdoc cref="Semicolon_Constant"/>
         public char Semicolon => ICharacters.Semicolon_Constant;
+
         public char SingleQuote => this.Apostrophe;
 
-        /// <summary>
-        /// <para><name>'/' (slash)</name></para>
-        /// </summary>
+        /// <inheritdoc cref="CharactersDocumentation.ForSlash"/>
         public char Slash => '/';
 
         /// <summary>

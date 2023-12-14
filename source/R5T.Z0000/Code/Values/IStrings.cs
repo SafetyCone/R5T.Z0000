@@ -2,6 +2,8 @@
 
 using R5T.T0131;
 
+using StringsDocumentation = R5T.Y0006.Documentation.ForStrings;
+
 
 namespace R5T.Z0000
 {
@@ -47,15 +49,13 @@ namespace R5T.Z0000
         public string DoubleSlash => "//";
         public string DoubleSpaces => "  ";
         public string Ellipsis => "...";
-        /// <summary>
-        /// <description>"", the empty string</description>
-        /// Constant, as opposed to <see cref="String.Empty"/>, which is readonly. Only constants can be used as default parameter values.
-        /// </summary>
+
+        /// <inheritdoc cref="StringsDocumentation.ForEmpty_Constant"/>
         public const string Empty_Constant = "";
-        /// <summary>
-        /// <inheritdoc cref="Empty_Constant" path="/summary/description"/>
-        /// </summary>
+
+        /// <inheritdoc cref="StringsDocumentation.ForEmpty"/>
         public string Empty => IStrings.Empty_Constant;
+
         /// <summary>
         /// "&lt;empty&gt;"
         /// </summary>
@@ -93,13 +93,15 @@ namespace R5T.Z0000
         public const string NewLine_Windows_Constant = "\r\n";
         /// <inheritdoc cref="NewLine_Windows_Constant"/>
         public string NewLine_Windows => IStrings.NewLine_Windows_Constant;
-        /// <summary>
-        /// "\n"
-        /// </summary>
+
+        /// <inheritdoc cref="StringsDocumentation.ForNewLine"/>
         public const string NewLine_NonWindows_Constant = "\n";
+
         /// <inheritdoc cref="NewLine_NonWindows_Constant"/>
         public string NewLine_NonWindows => IStrings.NewLine_NonWindows_Constant;
+
         public string NewLine_TextRepresentation => "<newline>";
+
         /// <inheritdoc cref="ICharacters.OpenAngleBracket"/>
         public string OpenAngleBracket => "<";
         public string OpenBrace => "{";
@@ -173,16 +175,29 @@ namespace R5T.Z0000
         /// </summary>
         public string Yes => this.Yes_PascalCase;
 
+        /// <inheritdoc cref="StringsDocumentation.ForTrue_Lowercase"/>
         public string True_Lowercase => "true";
+
+        /// <inheritdoc cref="StringsDocumentation.ForTrue_PascalCase"/>
         public string True_PascalCase => "True";
+
+        /// <inheritdoc cref="StringsDocumentation.ForTrue_Uppercase"/>
         public string True_Uppercase => "TRUE";
+
         /// <summary>
         /// Chooses <see cref="True_PascalCase"/> as the default.
         /// </summary>
         public string True => this.True_PascalCase;
+
+        /// <inheritdoc cref="StringsDocumentation.ForFalse_Uppercase"/>
         public string False_Lowercase => "false";
+
+        /// <inheritdoc cref="StringsDocumentation.ForFalse_Uppercase"/>
         public string False_PascalCase => "False";
+
+        /// <inheritdoc cref="StringsDocumentation.ForFalse_Uppercase"/>
         public string False_UpperCase => "FALSE";
+
         /// <summary>
         /// Chooses <see cref="False_PascalCase"/> as the default.
         /// </summary>

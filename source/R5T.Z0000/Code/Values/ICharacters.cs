@@ -160,11 +160,10 @@ namespace R5T.Z0000
         /// </value>
         public char OpenParenthesis => '(';
         public char Percent => '%';
-        /// <summary>
-        /// <para><name>'.' (period)</name></para>
-        /// The period character '.'.
-        /// </summary>
+
+        /// <inheritdoc cref="CharactersDocumentation.ForPeriod"/>
         public char Period => '.';
+
         public char Pipe => '|';
         public char Plus => '+';
         public char Pound => '#';
@@ -185,16 +184,9 @@ namespace R5T.Z0000
         /// <inheritdoc cref="CharactersDocumentation.ForSlash"/>
         public char Slash => '/';
 
-        /// <summary>
-        /// The space (' ').
-        /// </summary>
-        /// <name>
-        /// Space
-        /// </name>
-        /// <value>
-        /// (space)
-        /// </value>
+        /// <inheritdoc cref="CharactersDocumentation.ForSpace"/>
         public char Space => ' ';
+
         public char Tab => '\t';
         /// <summary>
         /// The ` (tick) character.

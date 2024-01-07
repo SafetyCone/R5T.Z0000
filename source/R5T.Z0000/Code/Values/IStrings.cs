@@ -113,8 +113,10 @@ namespace R5T.Z0000
         public string OpenParenthesis => "(";
         public string PairedParentheses => "()";
         public string Percent => "%";
-        /// <inheritdoc cref="ICharacters.Period"/>
+
+        /// <inheritdoc cref="StringsDocumentation.ForPeriod"/>
         public string Period => ".";
+
         public const string Period_Const = ".";
         public string Pipe => "|";
         public string PipeSpace => "| ";
@@ -123,19 +125,24 @@ namespace R5T.Z0000
         public string Quote => "\"";
         public string Semicolon => ";";
         public string SingleQuote => this.Apostrophe;
-        /// <inheritdoc cref="ICharacters.Space"/>
-        public string Space => " ";
+
+        /// <inheritdoc cref="StringsDocumentation.ForSpace"/>
         public const string Space_Const = " ";
+        
+        /// <inheritdoc cref="Space_Const"/>
+        public string Space => IStrings.Space_Const;
+
         /// <inheritdoc cref="ICharacters.Slash"/>
         public string Slash => IStrings.Slash_Constant;
         /// <inheritdoc cref="ICharacters.Slash"/>
         public const string Slash_Constant = "/";
-        /// <summary>
-        /// "\t"
-        /// </summary>
+
+        /// <inheritdoc cref="StringsDocumentation.ForTab"/>
         public const string Tab_Constant = "\t";
+
         /// <inheritdoc cref="Tab_Constant"/>
         public string Tab => IStrings.Tab_Constant;
+
         /// <summary>
         /// "&lt;tab&gt;"
         /// </summary>

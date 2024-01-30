@@ -12,7 +12,10 @@ namespace R5T.Z0000
     {
         public string Ampersand => "&";
         public string Apostrophe => "'";
+
+        /// <inheritdoc cref="StringsDocumentation.ForAsterix"/>
         public string Asterix => "*";
+
         public string At => "@";
         public string Backslash => @"\";
         /// <inheritdoc cref="ICharacters.CloseAngleBracket"/>
@@ -55,6 +58,12 @@ namespace R5T.Z0000
 
         /// <inheritdoc cref="StringsDocumentation.ForEmpty"/>
         public string Empty => IStrings.Empty_Constant;
+
+        /// <inheritdoc cref="StringsDocumentation.ForEquals"/>
+        public const string Equals_Constant = "=";
+
+        /// <inheritdoc cref="Equals_Constant"/>
+        public string Equals => IStrings.Equals_Constant;
 
         /// <summary>
         /// "&lt;empty&gt;"
@@ -118,11 +127,16 @@ namespace R5T.Z0000
         public string Period => ".";
 
         public const string Period_Const = ".";
+
+        /// <inheritdoc cref="StringsDocumentation.ForPipe"/>
         public string Pipe => "|";
+
         public string PipeSpace => "| ";
         public string QuestionMark => "?";
-        /// <inheritdoc cref="ICharacters.Quote"/>
+
+        /// <inheritdoc cref="StringsDocumentation.ForQuote"/>
         public string Quote => "\"";
+
         public string Semicolon => ";";
         public string SingleQuote => this.Apostrophe;
 

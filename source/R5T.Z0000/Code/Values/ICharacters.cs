@@ -16,6 +16,8 @@ namespace R5T.Z0000
     {
         public char Ampersand => '&';
         public char Apostrophe => '\'';
+
+        /// <inheritdoc cref="CharactersDocumentation.ForAsterix"/>
         public char Asterix => '*';
 
         /// <summary>
@@ -75,9 +77,7 @@ namespace R5T.Z0000
         /// </value>
         public char CloseParenthesis => ')';
 
-        /// <summary>
-        /// ':' (colon)
-        /// </summary>
+        /// <inheritdoc cref="CharactersDocumentation.ForColon"/>
         public const char Colon_Constant = ':';
 
         /// <inheritdoc cref="Colon_Constant"/>
@@ -98,7 +98,10 @@ namespace R5T.Z0000
         public char Dash => this.Minus;
         public char DoubleQuote => this.Quote;
         public char Dot => this.Period;
+
+        /// <inheritdoc cref="CharactersDocumentation.ForEquals"/>
         public char Equals => '=';
+
         /// <summary>
         /// Strangely, in Visual Studio form-feed prints as the feminine (Venus) symbol.
         /// </summary>
@@ -164,13 +167,13 @@ namespace R5T.Z0000
         /// <inheritdoc cref="CharactersDocumentation.ForPeriod"/>
         public char Period => '.';
 
+
         public char Pipe => '|';
         public char Plus => '+';
         public char Pound => '#';
         public char QuestionMark => '?';
-        /// <summary>
-        /// The '"' (quote, double-quote, or quotation mark) character.
-        /// </summary>
+
+        /// <inheritdoc cref="CharactersDocumentation.ForQuote"/>
         public char Quote => '"';
 
         /// <inheritdoc cref="CharactersDocumentation.ForSemicolon"/>
@@ -192,7 +195,10 @@ namespace R5T.Z0000
         /// The ` (tick) character.
         /// </summary>
         public char Tick => '`';
+
+        /// <inheritdoc cref="CharactersDocumentation.ForUnderscore"/>
         public char Underscore => '_';
+
         /// <summary>
         /// Strangely, in Visual Studio form-feed prints as the masculine (Mars) symbol.
         /// </summary>

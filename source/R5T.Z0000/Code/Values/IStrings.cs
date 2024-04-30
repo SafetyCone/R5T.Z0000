@@ -2,6 +2,7 @@
 
 using R5T.T0131;
 
+using CharactersDocumentation = R5T.Y0006.Documentation.ForCharacters;
 using StringsDocumentation = R5T.Y0006.Documentation.ForStrings;
 
 
@@ -146,10 +147,11 @@ namespace R5T.Z0000
         /// <inheritdoc cref="Space_Const"/>
         public string Space => IStrings.Space_Const;
 
-        /// <inheritdoc cref="ICharacters.Slash"/>
-        public string Slash => IStrings.Slash_Constant;
-        /// <inheritdoc cref="ICharacters.Slash"/>
+        /// <inheritdoc cref="CharactersDocumentation.ForSlash"/>
         public const string Slash_Constant = "/";
+
+        /// <inheritdoc cref="Slash_Constant"/>
+        public string Slash => IStrings.Slash_Constant;
 
         /// <inheritdoc cref="StringsDocumentation.ForTab"/>
         public const string Tab_Constant = "\t";

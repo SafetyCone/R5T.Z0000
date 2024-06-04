@@ -124,7 +124,7 @@ namespace R5T.Z0000
         public string PairedParentheses => "()";
         public string Percent => "%";
 
-        /// <inheritdoc cref="StringsDocumentation.ForPeriod"/>
+        /// <inheritdoc cref="StringsDocumentation.For_Period"/>
         public string Period => ".";
 
         public const string Period_Const = ".";

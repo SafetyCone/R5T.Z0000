@@ -2,8 +2,8 @@
 
 using R5T.T0131;
 
-using CharactersDocumentation = R5T.Y0006.Documentation.ForCharacters;
-using StringsDocumentation = R5T.Y0006.Documentation.ForStrings;
+using CharactersDocumentation = R5T.Y0006.Documentation.For_Characters;
+using StringsDocumentation = R5T.Y0006.Documentation.For_Strings;
 
 
 namespace R5T.Z0000

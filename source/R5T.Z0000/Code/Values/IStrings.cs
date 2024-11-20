@@ -79,24 +79,30 @@ namespace R5T.Z0000
         /// <inheritdoc cref="Interpunct_Const"/>
         public string Interpunct => IStrings.Interpunct_Const;
         public string LessThan => "<"; // No other name for it: https://english.stackexchange.com/questions/255262/what-is-the-name-of-the-symbols-and
+
         /// <summary>
         /// The actual value, null.
         /// </summary>
         public const string Null_Constant = null;
+
         /// <inheritdoc cref="Null_Constant"/>
         public string Null => IStrings.Null_Constant;
+
         /// <summary>
         /// "null"
         /// </summary>
         public string Null_StandardRepresentation => "null";
+
         /// <summary>
         /// "&lt;null&gt;"
         /// </summary>
         public string Null_TextRepresentation => "<null>";
+
         /// <summary>
         /// Chooses <see cref="NewLine_Windows"/> as the default.
         /// </summary>
         public string NewLine => this.NewLine_Windows;
+
         /// <summary>
         /// "\r\n"
         /// </summary>
